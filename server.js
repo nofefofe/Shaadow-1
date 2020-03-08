@@ -95,7 +95,7 @@ client.on("ready", () => {
   console.log(`ON ${client.guilds.size} Servers '     Script By : IZiixsZ  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`%help | IZiixsZ`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity(`%help | ! IZiixsZ#0150`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("dnd");
 });
 
@@ -1419,7 +1419,6 @@ client.on("message", message => {
 ** مثال : \`%addcredits 500 \`**
 ** %setLog • تحديد روم اللوق**
 ** %setby • تحديد روم المغادرة**
-
 `);
   }
 });
@@ -1437,7 +1436,8 @@ client.on("message", message => {
  ** __%3help__ ** ** أوامر الموسيقى ( غير متوفر حالياً ) **
  ** __%4help__ ** ** أوامر الحماية (للاونر فقط)  **
  ** __%5help__ ** ** اوامر مميزه  **
- **__أتمنى أني أفدتك__** <@{user}>
+
+ **__أتمنى أني أفدتك__** 
 
    `);
   }
