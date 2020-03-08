@@ -92,7 +92,7 @@ client.on("ready", () => {
   console.log(`----------------`);
   console.log(`IZiixsZ`);
   console.log(`----------------`);
-  console.log(`ON ${client.guilds.size} Servers '     Script By : TIZiixsZ  `);
+  console.log(`ON ${client.guilds.size} Servers '     Script By : IZiixsZ  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`%help | IZiixsZ`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
@@ -282,7 +282,7 @@ client.on("message", zaid => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@684786589444210708>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <@528954929453203456>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
         ""
       )
