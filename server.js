@@ -269,7 +269,7 @@ client.on("message", pixelbot => {
 }); // itzZa1D - Codes Team.
 
 client.on("message", zaid => {
-  if (zaid.content === "$bot") {
+  if (zaid.content === "%bot") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
       .setColor("#00000")
