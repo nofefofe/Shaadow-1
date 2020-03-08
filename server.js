@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["684786589444210708"]; ///تعديل مهم ايدي حسابك
+const dev = ["528954929453203456"]; ///تعديل مهم ايدي حسابك
 const admin = "=";
-var owner = "684786589444210708"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
+var owner = "528954929453203456"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -90,12 +90,12 @@ client.on("message", message => {
 
 client.on("ready", () => {
   console.log(`----------------`);
-  console.log(`TrFx7_Fares`);
+  console.log(`IZiixsZ`);
   console.log(`----------------`);
-  console.log(`ON ${client.guilds.size} Servers '     Script By : TrFx7_Fares  `);
+  console.log(`ON ${client.guilds.size} Servers '     Script By : TIZiixsZ  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`%help | TrFx7`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity(`%help | IZiixsZ`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("dnd");
 });
 
