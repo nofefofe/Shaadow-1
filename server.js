@@ -2880,16 +2880,22 @@ client.on("message", msg => {
   }
 });
 
-
 client.on("message", msg => {
-  if (msg.content === "رابطا") {
-    msg.reply("**هلا بيك :heart: **");
+  if (msg.content === "السلام عليكم") {
+    msg.reply("**وعليكم السلام نورت يا الغالي :heart: **");
   }
 });
 
+client.on("message", msg => {
+  if (msg.content === "") {
+    msg.reply("****");
+  }
+});
+
+
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith("=ping")) {
+  if (message.content.startsWith("%ping")) {
     if (message.author.bot) return;
     if (!message.channel.guild) return;
     var Bping = `${Math.round(client.ping)}`; 
