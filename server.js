@@ -390,8 +390,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "linkbot")) {
     var mbot = message.mentions.members.first();
-    message.channel.send(
-      `https://discordapp.com/api/oauth2/authorize?client_id=${mbot.id}&permissions=0&scope=bot`
+    message.channel.send(`https://discordapp.com/api/oauth2/authorize?client_id=${mbot.id}&permissions=0&scope=bot`
     );
   }
 });
@@ -883,7 +882,7 @@ client.on("message", message => {
       .setColor("black")
       .setDescription(
         ` ✽  **Hi I'm System Bot**  
-✽  **Support Server** [ https://discord.gg/aKdCRSX ] 
+✽  **Support Server** [ https://discord.gg/ ] 
 ✽  **Bot orders** [ • **%help** • ]   `
       )
 
@@ -981,7 +980,7 @@ client.on("messageCreate", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith("=avatar")) {
+  if (message.content.startsWith("%avatar")) {
     var mentionned = message.mentions.users.first();
     var x5bzm;
     if (mentionned) {
@@ -1004,13 +1003,13 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content === "=sup") {
+  if (message.content === "%sup") {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setColor("#9B59B6")
       .addField(
         " ** :gear: Server Support :gear: **",
-        "  **https://discord.gg/X9esPBy*"
+        "  **https://discord.gg/*"
       );
 
     message.channel.sendEmbed(embed);
@@ -1041,7 +1040,7 @@ client.on("guildMemberAdd", member => {
 
 
 client.on("message", async Epic => {
-  var prefix = "=";
+  var prefix = "%";
   if (Epic.content.startsWith(prefix + "vonline")) {
     if (!Epic.guild.member(Epic.author).hasPermission("MANAGE_CHANNELS"))
       return Epic.reply(":x: **I Dont Have Permissions**");
@@ -1125,7 +1124,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  var prefix = "=";
+  var prefix = "%";
   if (message.content.startsWith(prefix + "mvall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
@@ -2910,7 +2909,7 @@ client.on("guildCreate", guild => {
   var embed = new Discord.RichEmbed().setImage(
     ""
   ).setDescription(` ✽ **Thank You for Adding  Bot To Your Server**  ✽ 
-   ✽ **Support Server** [ • https://discord.gg/R3wvUgZ • ]  ✽ `); //تعديل مهم رابط سيرفرك
+   ✽ **Support Server** [ • https://discord.gg/ • ]  ✽ `); 
   guild.owner.send(embed);
 });
 
