@@ -2886,12 +2886,6 @@ client.on("message", msg => {
   }
 });
 
-client.on("message", msg => {
-  if (msg.content === "") {
-    msg.reply("****");
-  }
-});
-
 
 client.on("message", message => {
   if (!message.channel.guild) return;
