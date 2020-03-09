@@ -1426,7 +1426,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "help") {
-    message.channel.send(`  **__DreX∞Bot🧪__** 
+    message.channel.send(`  
 
 > **Help | Menu**
 ----------------------------
@@ -3773,4 +3773,5 @@ channel.guild.owner.send(`<@!${channelcreate.id}>
  channelc[channelcreate.id].created = 0;
   },Otime)
   });
+
 /// تعديل مهم هذا فقط تنبيه تم حذف الاكواد المتكررة والاكواد الخاطئة وتم اضافة تنبيهات مثل الميوزك وروم الهاك لوج تم حذف تغير ايدي سيرفرك
