@@ -124,9 +124,9 @@ client.on("message", message => {
       .split(" ")
       .slice(1)
       .join(" ");
-    if (!message.guild.roles.exists("name", "Support Team"))
+    if (!message.guild.roles.exists("name", "DreX Team"))
       return message.channel.send(
-        `This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets. لازم تسوي رتبة اسمها \`Support Team\`.`
+        `This server doesn't have a \`DreX Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets. لازم تسوي رتبة اسمها \`Support Team\`.`
       );
     if (
       message.guild.channels.exists(
@@ -138,7 +138,7 @@ client.on("message", message => {
     message.guild
       .createChannel(`ticket-${message.author.username}`, "text")
       .then(c => {
-        let role = message.guild.roles.find("name", "Support Team");
+        let role = message.guild.roles.find("name", "DreX Team");
         let role2 = message.guild.roles.find("name", "@everyone");
         c.overwritePermissions(role, {
           SEND_MESSAGES: true,
@@ -388,9 +388,10 @@ client.on("message", message => {
 }); ///Zine & Zaid
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "linkbot")) {
+  if (message.content.startsWith(prefix + "invite")) {
     var mbot = message.mentions.members.first();
-    message.channel.send(`https://discordapp.com/api/oauth2/authorize?client_id=${mbot.id}&permissions=0&scope=bot`
+    message.dm.send(`
+https://discordapp.com/api/oauth2/authorize?client_id=685207332929798181&permissions=8&scope=bot`
     );
   }
 });
