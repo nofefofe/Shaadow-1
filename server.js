@@ -390,7 +390,7 @@ client.on("message", message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "invite")) {
     var mbot = message.mentions.members.first();
-    message.dm.send(`
+    message.channel.send(`
 https://discordapp.com/api/oauth2/authorize?client_id=685207332929798181&permissions=8&scope=bot`
     );
   }
