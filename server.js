@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://f421.glitch.me/`);
+  http.get(`http://333.glitch.me/`);
 }, 280000);
 
 // كل البكجات الي ممكن تحتجها في اي بوت
@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["528954929453203456"]; ///تعديل مهم ايدي حسابك
+const dev = ["ايدي حسابك"]; ///تعديل مهم ايدي حسابك
 const admin = "=";
-var owner = "528954929453203456"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
+var owner = "ايدي حسابك"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -90,12 +90,12 @@ client.on("message", message => {
 
 client.on("ready", () => {
   console.log(`----------------`);
-  console.log(`IZiixsZ`);
+  console.log(`Amir`);
   console.log(`----------------`);
-  console.log(`ON ${client.guilds.size} Servers '     Script By : IZiixsZ  `);
+  console.log(`ON ${client.guilds.size} Servers '     Script By : Amir  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`%help | ! IZiixsZ#0150`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity(`%help | ! Amir`, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("dnd");
 });
 
@@ -282,7 +282,7 @@ client.on("message", zaid => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@528954929453203456>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <@ايدي حسابك>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
         ""
       )
