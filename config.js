@@ -1,6 +1,6 @@
 module.exports = {
-  TOKEN: "bot token", //تعديل مهم توكن بوتك
+  TOKEN: "NjkwNjAzNjgwMTc2NTM3NjIx.XnT00Q.S9nmyTUIvkaXGLq73iJmCrPMzk0", //تعديل مهم توكن بوتك
   YT_API_KEY: "api ",
-  prefix: "%",
+  prefix: "=",
   devs: ["ايدي حسابك"] ///تعديل مهم ايدي حسابك
 };
