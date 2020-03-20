@@ -90,13 +90,13 @@ client.on("message", message => {
 
 client.on("ready", () => {
   console.log(`----------------`);
-  console.log(`Amir`);
+  console.log(`Osama Khalid`);
   console.log(`----------------`);
-  console.log(`ON ${client.guilds.size} Servers '     Script By : Amir  `);
+  console.log(`ON ${client.guilds.size} Servers '     Script By : Osama Khalid  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`=help | Premium `, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
-  client.user.setStatus("ldle");
+  client.user.setActivity(`=help | Premium `); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setStatus("Idle");
 });
 
 client.on("message", message => {
