@@ -1265,7 +1265,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "1help") {
     message.channel.send(
-      `**| تــم رســال اوامــر الــعــامــه فــى الــخــاص ..**`
+      `**:smiling_imp:  | تم ارسال الاوامر العامة على الخاص **`
     );
 
     message.author.sendMessage(` ✽ **__ Premium Bot__**
@@ -1318,7 +1318,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "2help") {
     message.channel.send(
-      `**| تــم رســال اوامــر الإداريــه فــى الــخــاص ..**`
+      `**:smiling_imp:  | تم ارسال الاوامر الإدارية على الخاص **`
     );
     
     message.author.sendMessage(` **__✽ Premium Bot__**
@@ -1340,7 +1340,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "3help") {
     message.channel.send(
-      `**| تــم رســال اوامــر الــمــوســيــقــى فــى الــخــاص ..**`
+      `** :smiling_imp: | تم ارسال اوامر الموسيقى في الخاص**`
     );
 
     message.author.sendMessage(`  **__Premium Bot v1__**
@@ -1358,7 +1358,7 @@ client.on("message", message => {
     if (message.author.id !== message.guild.owner.user.id) return message.channel.send(`**لا تستطيع استخدام هذا الامر**`);
     
     message.channel.send(
-      `**| تــم رســال اوامــر الــحــمــايــة فــى الــخــاص ..**`
+      `**:smiling_imp:  | تم ارسال اوامر الحماية على الخاص **`
     );
 
     message.author.sendMessage(`**__✽  Premium Bot__**
@@ -1380,7 +1380,7 @@ client.on("message", message => {
   if (message.content === prefix + "5help") {
     
     message.channel.send(
-      `**| تــم رســال اوامــر المميزة فــى الــخــاص ..**`
+      `**:smiling_imp:  | تم ارسال الاوامر المميزة على الخاص **`
     );
 
     message.author.sendMessage(` **__Premium Bot__**
@@ -2764,6 +2764,7 @@ client.on("message", async message => {
   }
 });
 
+
 client.on("message", message => {
   if (message.content.startsWith(prefix + "setby")) {
     let args = message.mentions.channels.first();
@@ -2781,13 +2782,13 @@ client.on("message", message => {
       var embed = new Discord.RichEmbed()
         .setAuthor(member.user.username, member.user.avatarURL)
         .setThumbnail(member.user.avatarURL)
-        .setTitle(`**__الله معاك ✋ 😢 😔__**`)
+        .setTitle(`**الله معاك ✋**`)
         .addField("**__شكرا لوقتك__**  ", `${member}`)
-        .setDescription(`**__مع السلامه تشرفنا بك ✋😢 😔__** `)
+        .setDescription(`**مع السلامه تشرفنا بك ✋😢** `)
         .addField("👤   تبقي", `**[ ${member.guild.memberCount} ]**`, true)
         .setColor("RANDOM")
         .setFooter(
-          `==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`,
+          `نــتــمــنــآ لــكــم آلاـتــمـــتــآع `,
           "https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png"
         );
 
