@@ -119,7 +119,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith("%new")) {
+  if (message.content.startsWith("=new")) {
     const reason = message.content
       .split(" ")
       .slice(1)
@@ -269,7 +269,7 @@ client.on("message", pixelbot => {
 }); // itzZa1D - Codes Team.
 
 client.on("message", zaid => {
-  if (zaid.content === "%bot") {
+  if (zaid.content === "=bot") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
       .setColor("#00000")
@@ -397,7 +397,7 @@ https://discordapp.com/api/oauth2/authorize?client_id=685207332929798181&permiss
 });
 
 client.on("message", message => {
-  if (message.content.split(" ")[0] == `%ban`) {
+  if (message.content.split(" ")[0] == `=ban`) {
     if (!message.guild || message.author.bot) return undefined;
     if (!message.member.hasPermission("BAN_MEMBERS"))
       return message.channel.send("You don't have permission.");
@@ -883,8 +883,8 @@ client.on("message", message => {
       .setColor("black")
       .setDescription(
         ` ✽  **Hi I'm System Bot**  
-✽  **Support Server** [ https://discord.gg/ ] 
-✽  **Bot orders** [ • **%help** • ]   `
+✽  **Support Server** [ https://discord.gg/JJTmEjc ] 
+✽  **Bot orders** [ • **=help** • ]   `
       )
 
       .setImage(
@@ -981,7 +981,7 @@ client.on("messageCreate", async message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith("%avatar")) {
+  if (message.content.startsWith("=avatar")) {
     var mentionned = message.mentions.users.first();
     var x5bzm;
     if (mentionned) {
@@ -1004,13 +1004,13 @@ client.on("message", message => {
 
 
 client.on("message", message => {
-  if (message.content === "%sup") {
+  if (message.content === "=sup") {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
       .setColor("#9B59B6")
       .addField(
         " ** :gear: Server Support :gear: **",
-        "  **https://discord.gg/*"
+        "  **https://discord.gg/JJTmEjc*"
       );
 
     message.channel.sendEmbed(embed);
@@ -1041,7 +1041,7 @@ client.on("guildMemberAdd", member => {
 
 
 client.on("message", async Epic => {
-  var prefix = "%";
+  var prefix = "=";
   if (Epic.content.startsWith(prefix + "vonline")) {
     if (!Epic.guild.member(Epic.author).hasPermission("MANAGE_CHANNELS"))
       return Epic.reply(":x: **I Dont Have Permissions**");
@@ -1076,7 +1076,7 @@ client.on("message", async Epic => {
 });
 
 client.on("message", message => {
-  var prefix = "%";
+  var prefix = "=";
   if (!message.channel.guild) return;
   if (message.content.startsWith(prefix + "move")) {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
@@ -1125,7 +1125,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  var prefix = "%";
+  var prefix = "=";
   if (message.content.startsWith(prefix + "mvall")) {
     if (!message.member.hasPermission("MOVE_MEMBERS"))
       return message.channel.send("**:x: You Dont Have Perms `MOVE_MEMBERS`**");
@@ -1340,21 +1340,20 @@ client.on("message", message => {
       `**| تــم رســال اوامــر الإداريــه فــى الــخــاص ..**`
     );
     
-    message.author.sendMessage(` ✽ **__DreX∞Bot🧪__**
+    message.author.sendMessage(` **__✽ Premium Bot__**
    **__الاوامر الإداريــه__** ✽ 
-**  %clear • لمسح الشات** 
-**  %ban • لتبنيد شخص** 
-**  %kick • لاعطاء كيك لشخص** 
-**  %open • لفتح الشات** 
-**  %close • لقفل الشات** 
-**  %mute • لاعطاء ميوت لشخص** 
-**  %unmute • لفك ميوت عن شخص** 
-**  %bc •  لأرسال برود كاست للكل**
-**  %new •  فتح التكت**
-**  %say • البوت يكرر كلامك**
-**  %move •  لسحب الشخص الى روومك**
-**  %giveaway •   يسويلك قف اوي علي الشي الي تبيه**
-
+**  =clear • لمسح الشات** 
+**  =ban • لتبنيد شخص** 
+**  =kick • لاعطاء كيك لشخص** 
+**  =open • لفتح الشات** 
+**  =close • لقفل الشات** 
+**  =mute • لاعطاء ميوت لشخص** 
+**  =unmute • لفك ميوت عن شخص** 
+**  =bc •  لأرسال برود كاست للكل**
+**  =new •  فتح التكت**
+**  =say • البوت يكرر كلامك**
+**  =move •  لسحب الشخص الى روومك**
+**  =giveaway •   يسويلك قف اوي علي الشي الي تبيه**
 
 `);
   }
@@ -1384,16 +1383,16 @@ client.on("message", message => {
       `**| تــم رســال اوامــر الــحــمــايــة فــى الــخــاص ..**`
     );
 
-    message.author.sendMessage(`**__DreX∞Bot🧪__**
+    message.author.sendMessage(`**__✽  Premium Bot__**
 **__اوامر الــحــمــايــة__**  
-**  %settings limitsban •  تحدد العدد الي تبيه لو حد بند  بيشتال رتبته **
-**  %settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 بيشتال رتبته **
-**  %settings limitsroleD •  تحدد العدد الي تبيه لو حد مسح رول 3 او 4 بيشتال رتبته **
-**  %settings limitsroleC •  تحدد العدد الي تبيه لو حد صنع روم 3 او 4 بيشتال رتبته **
-**  %settings limitschannelD •  تحدد العدد الي تبيه لو حد مسح روم 3 او 4 بيشتال رتبته **
-**  %settings limitstime •  تحديد الوقت الذي من خلالة يتم التبنيد كـ مثال اذا شخص بند 5 في دقيقة تنزل رتبتة**
-**  %antibots on •  منع دخول بوتات**
-**  %antibots off •  فتح دخول البوتات**
+**  =settings limitsban •  تحدد العدد الي تبيه لو حد بند  بيشتال رتبته **
+**  =settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 بيشتال رتبته **
+**  =settings limitsroleD •  تحدد العدد الي تبيه لو حد مسح رول 3 او 4 بيشتال رتبته **
+**  =settings limitsroleC •  تحدد العدد الي تبيه لو حد صنع روم 3 او 4 بيشتال رتبته **
+**  =settings limitschannelD •  تحدد العدد الي تبيه لو حد مسح روم 3 او 4 بيشتال رتبته **
+**  =settings limitstime •  تحديد الوقت الذي من خلالة يتم التبنيد كـ مثال اذا شخص بند 5 في دقيقة تنزل رتبتة**
+**  =antibots on •  منع دخول بوتات**
+**  =antibots off •  فتح دخول البوتات**
 `);
   }
 });
@@ -2887,7 +2886,7 @@ client.on("message", msg => {
 
 client.on("message", message => {
   if (!message.channel.guild) return;
-  if (message.content.startsWith("%ping")) {
+  if (message.content.startsWith("=ping")) {
     if (message.author.bot) return;
     if (!message.channel.guild) return;
     var Bping = `${Math.round(client.ping)}`; 
