@@ -2775,7 +2775,7 @@ client.on("message", message => {
       !message.guild.member(message.author.id).hasPermission("MANAGE_CHANNELS")
     )
       return message.channel.send("**ليس لديك صلاحيات . ❌**");
-    message.channel.send(`**${args}. لقد تم شغيل المغادرة هنا.**`); //By ItzTexo
+    message.channel.send(`**${args} لقد تم شغيل المغادرة هنا :loudspeaker: **`); //By ItzTexo
     client.on("guildMemberAdd", member => {
       if (member.user.bot) return;
       var embed = new Discord.RichEmbed()
