@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["ايدي حسابك"]; ///تعديل مهم ايدي حسابك
+const dev = ["335645388323160064"]; ///تعديل مهم حط ايدي حسابك
 const admin = "=";
-var owner = "ايدي حسابك"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
+var owner = "335645388323160064"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -96,7 +96,7 @@ client.on("ready", () => {
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity(`=help | Premium `, "http://twitch.tv/Rad-Bot"); ///تعديل مهم غير كلمة هيلب وبرميوم للوتشينق اللي بدك اياه مثل اسم سيرفرك
-  client.user.setStatus("dnd");
+  client.user.setStatus("ldle");
 });
 
 client.on("message", message => {
