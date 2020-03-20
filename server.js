@@ -1408,7 +1408,7 @@ client.on("message", message => {
     message.channel.send(`  
 
 ** Help Menu**
-----------------------------
+
 > ** =1help ** ** الاوامر العامه  **
 > ** =2help ** ** الاوامر الإداريه  **
 > ** =3help ** ** أوامر الموسيقى   **
