@@ -100,33 +100,14 @@ client.on("ready", () => {
 });
 
 client.on("message", message => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(
-  )) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-  if (command == "say") {
-    if (!message.member.hasPermission("ADMINISTRATOR"))
-      return message.channel.send("?|**`ADMINISTRATOR`ليس لديك صلاحيات`**  ");
-
-    message.channel.sendMessage(args.join("  "));
-    message.delete();
-  }
-});
-
-client.on("message", message => {
   if (message.content.startsWith("=new")) {
     const reason = message.content
       .split(" ")
       .slice(1)
       .join(" ");
-    if (!message.guild.roles.exists("name", "DreX Team"))
+    if (!message.guild.roles.exists("name", "Support Team"))
       return message.channel.send(
-        `This server doesn't have a \`DreX Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets. لازم تسوي رتبة اسمها \`Support Team\`.`
+        `This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets. لازم تسوي رتبة اسمها \`Support Team\`.`
       );
     if (
       message.guild.channels.exists(
@@ -1345,13 +1326,9 @@ client.on("message", message => {
 **  =clear • لمسح الشات** 
 **  =ban • لتبنيد شخص** 
 **  =kick • لاعطاء كيك لشخص** 
-**  =open • لفتح الشات** 
-**  =close • لقفل الشات** 
 **  =mute • لاعطاء ميوت لشخص** 
 **  =unmute • لفك ميوت عن شخص** 
-**  =bc •  لأرسال برود كاست للكل**
 **  =new •  فتح التكت**
-**  =say • البوت يكرر كلامك**
 **  =move •  لسحب الشخص الى روومك**
 **  =giveaway •   يسويلك قف اوي علي الشي الي تبيه**
 
@@ -1366,9 +1343,10 @@ client.on("message", message => {
       `**| تــم رســال اوامــر الــمــوســيــقــى فــى الــخــاص ..**`
     );
 
-    message.author.sendMessage(`  **__✽ Premium Bot__**
+    message.author.sendMessage(`  **__Premium Bot v1__**
   **__أوامر الــمــوســيــقــى__**   
-**  حاليا البوت لا يدعم الموسيقى  **
+**  حاليا البوت لا يدعم الموسيقى ، لكن يمكنك عمل بوت هنا وضع نفس التوكن وسوف يعمل **
+** -  https://youtu.be/_ddysZxk9Pw | شرح بوت ميوزك يعمل 24 ساعة **
     
 `);
   }
@@ -3271,7 +3249,7 @@ julian.on("message", codes => {
       onoff: "On"
     });
 
-    codes.channel.send("AntiBots Join Is On");
+    codes.channel.send("** AntiBots Join Is On :lock: **");
   }
   if (codes.content.startsWith(prefix + "antibots off")) {
     if (
@@ -3729,21 +3707,6 @@ client.on("message", message => {
   });
 });
 
-
-
- client.on("message", message => {
-
-            if (message.content.startsWith(prefix + "bc")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'all').forEach(m => {
- m.send(`${argresult}\n  `);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\`Done`); 
- message.delete(); 
-};     
-});
 
  let channelc = {};
   client.on('channelCreate', async (channel) => {
