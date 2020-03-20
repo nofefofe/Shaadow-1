@@ -47,6 +47,7 @@ client.login(TOKEN);
 const queue = new Map();
 var table = require("table").table;
 const Discord = require("discord.js");
+
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -55,7 +56,6 @@ console.log("1");
 console.log("2");
 console.log("3");
 console.log("=========> Bot Online <=========");
-console.log("========> TestBot <========");
 console.log("=======> Token Bot **** <=======");
 console.log("3");
 console.log("2");
@@ -1321,7 +1321,7 @@ client.on("message", message => {
       `**:smiling_imp:  | تم ارسال الاوامر الإدارية على الخاص **`
     );
     
-    message.author.sendMessage(` **__✽ Premium Bot__**
+    message.author.sendMessage(` **✽ Premium Bot v1**
    **__الاوامر الإداريــه__** ✽ 
 **  =clear • لمسح الشات** 
 **  =ban • لتبنيد شخص** 
