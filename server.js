@@ -1268,7 +1268,7 @@ client.on("message", message => {
       `**:smiling_imp:  | تم ارسال الاوامر العامة على الخاص **`
     );
 
-    message.author.sendMessage(` ✽ **__ Premium Bot__**
+    message.author.sendMessage(` ✽ **__ Premium Bot v1__**
 **__الاوامر العامه__** 
 **  =bot • لعرض معلومات عن البوت** 
 **  =user • لعرض معلومات عنك** 
@@ -1384,7 +1384,6 @@ client.on("message", message => {
     );
 
     message.author.sendMessage(` **Premium Bot v1**
-
 
 ** =creatcolores • صنع ألوان **
 ** =colors • غير لونك ** 
