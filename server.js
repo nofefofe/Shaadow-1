@@ -119,7 +119,7 @@ client.on("message", message => {
     message.guild
       .createChannel(`ticket-${message.author.username}`, "text")
       .then(c => {
-        let role = message.guild.roles.find("name", "DreX Team");
+        let role = message.guild.roles.find("name", "Support Team");
         let role2 = message.guild.roles.find("name", "@everyone");
         c.overwritePermissions(role, {
           SEND_MESSAGES: true,
@@ -1383,7 +1383,7 @@ client.on("message", message => {
       `**| تــم رســال اوامــر المميزة فــى الــخــاص ..**`
     );
 
-    message.author.sendMessage(` **__DreX∞Bot🧪__**
+    message.author.sendMessage(` **__Premium Bot__**
 
 
 ** =creatcolores • صنع ألوان **
