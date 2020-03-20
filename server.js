@@ -1363,17 +1363,18 @@ client.on("message", message => {
 
     message.author.sendMessage(`**__✽  Premium Bot__**
 **__اوامر الــحــمــايــة__**  
-**  =settings limitsban •  تحدد العدد الي تبيه لو حد بند  بيشتال رتبته **
-**  =settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 بيشتال رتبته **
-**  =settings limitsroleD •  تحدد العدد الي تبيه لو حد مسح رول 3 او 4 بيشتال رتبته **
-**  =settings limitsroleC •  تحدد العدد الي تبيه لو حد صنع روم 3 او 4 بيشتال رتبته **
-**  =settings limitschannelD •  تحدد العدد الي تبيه لو حد مسح روم 3 او 4 بيشتال رتبته **
-**  =settings limitstime •  تحديد الوقت الذي من خلالة يتم التبنيد كـ مثال اذا شخص بند 5 في دقيقة تنزل رتبتة**
-**  =antibots on •  منع دخول بوتات**
+**  =settings limitsban •  تحدد العدد الي تبيه لو حد بند ، البوت يبنده **
+**  =settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 ، البوت يبنده **
+**  =settings limitsroleD •  تحدد العدد الي تبيه لو حد مسح رول 3 او 4 ، البوت يبنده **
+**  =settings limitsroleC •  تحدد العدد الي تبيه لو حد صنع روم 3 او 4 ، البوت يبنده **
+**  =settings limitschannelD •  تحدد العدد الي تبيه لو حد مسح روم 3 او 4 ، البوت يبنده **
+**  =settings limitstime •  تحديد الوقت الذي من خلالة يتم التبنيد كـ مثال اذا شخص بند 5 في دقيقة ، البوت يبنده **
+**  =antibots on •  منع دخول البوتات**
 **  =antibots off •  فتح دخول البوتات**
 `);
   }
 });
+
 client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "5help") {
@@ -3261,7 +3262,7 @@ julian.on("message", codes => {
     antibots.set(`${codes.guild.id}`, {
       onoff: "Off"
     });
-    codes.channel.send("AntiBots Join Is Off");
+    codes.channel.send("** AntiBots Join Is Off :unlock: **");
   }
 });
 
