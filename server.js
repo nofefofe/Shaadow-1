@@ -1343,7 +1343,7 @@ client.on("message", message => {
       `** :smiling_imp: | تم ارسال اوامر الموسيقى في الخاص**`
     );
 
-    message.author.sendMessage(`  **__Premium Bot v1__**
+    message.author.sendMessage(`  **Premium Bot v1**
   **__أوامر الــمــوســيــقــى__**   
 **  حاليا البوت لا يدعم الموسيقى ، لكن يمكنك عمل بوت هنا وضع نفس التوكن وسوف يعمل **
 ** -  https://youtu.be/_ddysZxk9Pw | شرح بوت ميوزك يعمل 24 ساعة **
@@ -1361,7 +1361,7 @@ client.on("message", message => {
       `**:smiling_imp:  | تم ارسال اوامر الحماية على الخاص **`
     );
 
-    message.author.sendMessage(`**__✽  Premium Bot__**
+    message.author.sendMessage(`**✽  Premium Bot v1**
 **__اوامر الــحــمــايــة__**  
 **  =settings limitsban •  تحدد العدد الي تبيه لو حد بند ، البوت يبنده **
 **  =settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 ، البوت يبنده **
@@ -1383,7 +1383,7 @@ client.on("message", message => {
       `**:smiling_imp:  | تم ارسال الاوامر المميزة على الخاص **`
     );
 
-    message.author.sendMessage(` **__Premium Bot__**
+    message.author.sendMessage(` **Premium Bot v1**
 
 
 ** =creatcolores • صنع ألوان **
