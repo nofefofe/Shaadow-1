@@ -2,7 +2,7 @@
 ///// معلومات مهمة
 ///// البوت أمن ولايوجد به مشاكل وان وجد مشاكل تواصل معي وسوف يتم حلها ، برابط المقطع 
 //// رابط المقطع : https://youtu.be/pD52f5iWk-A
-///اخر تحديث بتاريخ 3\3
+///اخر تحديث بتاريخ 20\3
 /// البوت تجميع ، وليس عمل من الصفر والغاية بالاخير افادة الناس وجميع الحقوق محفوظة وموجدة
 const http = require("http");
 const express = require("express");
@@ -95,8 +95,8 @@ client.on("ready", () => {
   console.log(`ON ${client.guilds.size} Servers '     Script By : Osama Khalid  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity(`=help | Premium `); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
-  client.user.setStatus("Idle");
+  client.user.setActivity("=help | Premium" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setStatus("idle");
 });
 
 client.on("message", message => {
@@ -107,7 +107,7 @@ client.on("message", message => {
       .join(" ");
     if (!message.guild.roles.exists("name", "Support Team"))
       return message.channel.send(
-        `This server doesn't have a \`Support Team\` role made, so the ticket won't be opened.\nIf you are an administrator, make one with that name exactly and give it to users that should be able to see tickets. لازم تسوي رتبة اسمها \`Support Team\`.`
+` لازم تسوي رتبة اسمها \`Support Team\`.`
       );
     if (
       message.guild.channels.exists(
@@ -2886,7 +2886,7 @@ client.on("guildCreate", guild => {
   var embed = new Discord.RichEmbed().setImage(
     ""
   ).setDescription(` ✽ **Thank You for Adding  Bot To Your Server**  ✽ 
-   ✽ **Support Server** [ • https://discord.gg/ • ]  ✽ `); 
+   ✽ **Support Server** [ • https://discord.gg/3Qbr6v • ]  ✽ `); 
   guild.owner.send(embed);
 });
 
