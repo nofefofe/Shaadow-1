@@ -3445,14 +3445,6 @@ client.on("message", async message => {
   }
 });
 
-client.on("message", async message => {
-  if (message.content.includes("discord.gg")) {
-    // if(message.member.hasPermission("MANAGE_GUILD")) return;
-    if (!message.channel.guild) return;
-    message.delete();
-  }
-});
-
 /*
 const replyMSG = JSON.parse(fs.readFileSync("./replyMSG.json", "utf8")); // i dont wanna explain you are not my father!
 
