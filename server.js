@@ -95,7 +95,7 @@ client.on("ready", () => {
   console.log(`ON ${client.guilds.size} Servers '     Script By : Osama Khalid  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("=ٍSarah" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity("=ٍSaraHツ《BoT》" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("idle");
 });
 
@@ -263,7 +263,7 @@ client.on("message", zaid => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@335645388323160064>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <@628259166833737728>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
         ""
       )
@@ -413,7 +413,7 @@ client.on("message", message => {
   }
 });
 
-let room = "685041891766566916"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
+let room = "695607138080522260"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
 
 client.on("guildMemberAdd", member => {
   let guild = client.channels.get(room).guild.id;
@@ -1015,7 +1015,7 @@ client.on("guildMemberAdd", member => {
     .addField(" **__Welcome To Server__**", `**${member.guild.name}**`)
     .addField("**انت العضو رقم** ", `${member.guild.memberCount} `)
     .setColor("RANDOM");
-  var channel = member.guild.channels.find("name", "welcome"); //تعديل مهم اسم روم الولكم
+  var channel = member.guild.channels.find("name", "🤝ツ🌸تــــــرحــــــيــــــب🌸"); //تعديل مهم اسم روم الولكم
   if (!channel) return;
   channel.send({ embed: embed });
 });
