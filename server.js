@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["335645388323160064"]; ///تعديل مهم حط ايدي حسابك
+const dev = ["628259166833737728"]; ///تعديل مهم حط ايدي حسابك
 const admin = "=";
-var owner = "335645388323160064"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
+var owner = "628259166833737728"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -95,7 +95,7 @@ client.on("ready", () => {
   console.log(`ON ${client.guilds.size} Servers '     Script By : Osama Khalid  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("=help | Premium" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity("=ٍSarah" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("idle");
 });
 
