@@ -2840,7 +2840,7 @@ client.on("message", async message => {
 /// تعديل مهم رد تلقائي
 client.on("message", msg => {
   if (msg.content === "باك") {
-    msg.reply("** ولكم نورت :sparkling_heart: :wink:**  ");
+    msg.reply("**:robot: ويلكم باك :smiling_face_with_3_hearts: - منور يا بوت**  ");
   }
 });
 
