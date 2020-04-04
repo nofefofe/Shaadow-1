@@ -2960,7 +2960,79 @@ client.on("message", msg => {
 
 client.on("message", msg => {
   if (msg.content === "فلير") {
-    msg.reply("** وادي دروب الفلير يا معلم :pubgweapondrop_02:**");
+    msg.reply("** وادي دروب الفلير يا معلم 📦**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "how are you") {
+    msg.reply("**🤣🤪 فاين سانك يو 💪 تسلم حبي على السؤال**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "الو") {
+    msg.reply("**😶😑 الو بابا فين**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "بخ") {
+    msg.reply("**😨 خضيتني يا بوت**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "عو") {
+    msg.reply("**😑 قديمة الحركات دي ياض**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "صباح الفل") {
+    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "صباح الخير") {
+    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "صباح النور") {
+    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "صباح الياسمين") {
+    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "مساء الفل") {
+    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "مساء الخير") {
+    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "مساء النور") {
+    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "مساء الياسمين") {
+    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
   }
 });
 
