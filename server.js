@@ -2840,28 +2840,81 @@ client.on("message", async message => {
 /// تعديل مهم رد تلقائي
 client.on("message", msg => {
   if (msg.content === "السلام عليكم") {
-    msg.reply("**:robot: ويلكم باك :smiling_face_with_3_hearts: - منور يا بوت**  ");
+    msg.reply("**😂 وعليكم السلام ورحمة الله وبركاته 💖💕 - منور يا بوت**  ");
   }
 });
 
 client.on("message", msg => {
-  if (msg.content === "هاي") {
-    msg.reply("** هاي يا عسل   :kissing_heart: :heart: **");
+  if (msg.content === "اهلا") {
+    msg.reply("**🤣 اهلا بكبير البوتات**");
   }
 });
 
 client.on("message", msg => {
-  if (msg.content === "هلا") {
-    msg.reply("**هلا بيك :heart: **");
+  if (msg.content === "أهلا") {
+    msg.reply("**🤣 اهلا بكبير البوتات**");
   }
 });
 
 client.on("message", msg => {
-  if (msg.content === "السلام عليكم") {
-    msg.reply("**وعليكم السلام نورت يا الغالي :heart: **");
+  if (msg.content === "يا سارة") {
+    msg.reply("**😪 ساره بوت بتظبط اعدادات السرفر**");
   }
 });
 
+client.on("message", msg => {
+  if (msg.content === "يا ساره") {
+    msg.reply("**😪 ساره بوت بتظبط اعدادات السرفر**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "كمبورة") {
+    msg.reply("**تاتاتا تارارارا 😂**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "كمبوره") {
+    msg.reply("**تاتاتا تارارارا 😂**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "يا بوت") {
+    msg.reply("**🤖 رد يا بوت منك ليه 🤖**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "ساره") {
+    msg.reply("**😣 سيب ساره بوت في حالها 😣**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "سارة") {
+    msg.reply("**😣 سيب ساره بوت في حالها 😣**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "سارا") {
+    msg.reply("**🙌 اسمها ساره مش سارا**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "فريق البوتات") {
+    msg.reply("**:frog: بكابورتا**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "باك") {
+    msg.reply("**🤖 ويلكم باك 🥰 - منور يا بوت**");
+  }
+});
 
 client.on("message", message => {
   if (!message.channel.guild) return;
