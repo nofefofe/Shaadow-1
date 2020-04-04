@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["628259166833737728"]; ///تعديل مهم حط ايدي حسابك
+const dev = ["حط الايدي"]; ///تعديل مهم حط ايدي حسابك
 const admin = "=";
-var owner = "628259166833737728"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
+var owner = "حط الايدي"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -95,7 +95,7 @@ client.on("ready", () => {
   console.log(`ON ${client.guilds.size} Servers '     Script By : Osama Khalid  `);
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("=ٍSaraHツ《BoT》" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity("اسم السيرفر" ); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("idle");
 });
 
@@ -263,7 +263,7 @@ client.on("message", zaid => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@628259166833737728>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <@حط الايدي>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage(
         ""
       )
@@ -413,7 +413,7 @@ client.on("message", message => {
   }
 });
 
-let room = "695607138080522260"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
+let room = "89458924"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
 
 client.on("guildMemberAdd", member => {
   let guild = client.channels.get(room).guild.id;
@@ -1015,7 +1015,7 @@ client.on("guildMemberAdd", member => {
     .addField(" **__Welcome To Server__**", `**${member.guild.name}**`)
     .addField("**انت العضو رقم** ", `${member.guild.memberCount} `)
     .setColor("RANDOM");
-  var channel = member.guild.channels.find("name", "🤝ツ🌸تــــــرحــــــيــــــب🌸"); //تعديل مهم اسم روم الولكم
+  var channel = member.guild.channels.find("name", "اسم روم الترحيب"); //تعديل مهم اسم روم الولكم
   if (!channel) return;
   channel.send({ embed: embed });
 });
@@ -2835,206 +2835,7 @@ client.on("message", async message => {
 /// تعديل مهم رد تلقائي
 client.on("message", msg => {
   if (msg.content === "السلام عليكم") {
-    msg.reply("**😂 وعليكم السلام ورحمة الله وبركاته 💖💕 - منور يا بوت**  ");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "هاي") {
-    msg.reply("**😂 هاي 💖💕 - منور يا بوت**");
-  }
-});	
-
-
-client.on("message", msg => {
-  if (msg.content === "اهلا") {
-    msg.reply("**🤣 اهلا بكبير البوتات**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "أهلا") {
-    msg.reply("**🤣 اهلا بكبير البوتات**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "يا سارة") {
-    msg.reply("**😪 ساره بوت بتظبط اعدادات السرفر**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "يا ساره") {
-    msg.reply("**😪 ساره بوت بتظبط اعدادات السرفر**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "كمبورة") {
-    msg.reply("**تاتاتا تارارارا 😂**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "كمبوره") {
-    msg.reply("**تاتاتا تارارارا 😂**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "كمبوره") {
-    msg.reply("**بالطاسة على طول 😂 🍳**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "يا بوت") {
-    msg.reply("**🤖 رد يا بوت منك ليه 🤖**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "ساره") {
-    msg.reply("**😣 سيب ساره بوت في حالها 😣**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "سارة") {
-    msg.reply("**😣 سيب ساره بوت في حالها 😣**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "سارا") {
-    msg.reply("**🙌 اسمها ساره مش سارا**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "يا سارا") {
-    msg.reply("**🙌 اسمها ساره مش سارا**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "فريق البوتات") {
-    msg.reply("**:frog: بكابورتا**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "باك") {
-    msg.reply("**🤖 ويلكم باك 🥰 - منور يا بوت**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "رابط") {
-    msg.reply("**https://discord.gg/YBYE6ap**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "هلو") {
-    msg.reply("**هلا والله يا شيخ البوتات 😍🤣🤖**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "هلا") {
-    msg.reply("**هلا والله يا شيخ البوتات 😍🤣🤖**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "اهلين") {
-    msg.reply("**🤣 اهلين يا معلمين 🤩- منورين يا بوتات**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "اهلين") {
-    msg.reply("**🤣 اهلين يا معلمين 🤩- منورين يا بوتات**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "فلير") {
-    msg.reply("** وادي دروب الفلير يا معلم 📦**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "how are you") {
-    msg.reply("**🤣🤪 فاين سانك يو 💪 تسلم حبي على السؤال**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "الو") {
-    msg.reply("**😶😑 الو بابا فين**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "بخ") {
-    msg.reply("**😨 خضيتني يا بوت**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "عو") {
-    msg.reply("**😑 قديمة الحركات دي ياض**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "صباح الفل") {
-    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "صباح الخير") {
-    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "صباح النور") {
-    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "صباح الياسمين") {
-    msg.reply("**🤗 صباحك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "مساء الفل") {
-    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "مساء الخير") {
-    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "مساء النور") {
-    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
-  }
-});
-
-client.on("message", msg => {
-  if (msg.content === "مساء الياسمين") {
-    msg.reply("**🤗 مساءك عسل يا بوت 🥰 منور**");
+    msg.reply("** وعليكم السلام ورحمة الله وبركاته 💖💕**  ");
   }
 });
 
