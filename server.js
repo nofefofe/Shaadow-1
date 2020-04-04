@@ -2881,6 +2881,12 @@ client.on("message", msg => {
 });
 
 client.on("message", msg => {
+  if (msg.content === "كمبوره") {
+    msg.reply("**بالطاسة على طول 😂 🍳**");
+  }
+});
+
+client.on("message", msg => {
   if (msg.content === "يا بوت") {
     msg.reply("**🤖 رد يا بوت منك ليه 🤖**");
   }
@@ -2905,6 +2911,12 @@ client.on("message", msg => {
 });
 
 client.on("message", msg => {
+  if (msg.content === "يا سارا") {
+    msg.reply("**🙌 اسمها ساره مش سارا**");
+  }
+});
+
+client.on("message", msg => {
   if (msg.content === "فريق البوتات") {
     msg.reply("**:frog: بكابورتا**");
   }
@@ -2913,6 +2925,42 @@ client.on("message", msg => {
 client.on("message", msg => {
   if (msg.content === "باك") {
     msg.reply("**🤖 ويلكم باك 🥰 - منور يا بوت**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "رابط") {
+    msg.reply("**https://discord.gg/YBYE6ap**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "هلو") {
+    msg.reply("**هلا والله يا شيخ البوتات 😍🤣🤖**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "هلا") {
+    msg.reply("**هلا والله يا شيخ البوتات 😍🤣🤖**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "اهلين") {
+    msg.reply("**🤣 اهلين يا معلمين 🤩- منورين يا بوتات**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "اهلين") {
+    msg.reply("**🤣 اهلين يا معلمين 🤩- منورين يا بوتات**");
+  }
+});
+
+client.on("message", msg => {
+  if (msg.content === "فلير") {
+    msg.reply("** وادي دروب الفلير يا معلم :pubgweapondrop_02:**");
   }
 });
 
