@@ -2839,7 +2839,7 @@ client.on("message", async message => {
 });
 /// تعديل مهم رد تلقائي
 client.on("message", msg => {
-  if (msg.content === "باك") {
+  if (msg.content === "السلام عليكم") {
     msg.reply("**:robot: ويلكم باك :smiling_face_with_3_hearts: - منور يا بوت**  ");
   }
 });
