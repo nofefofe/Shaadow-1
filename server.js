@@ -2570,12 +2570,7 @@ client.on("voiceStateUpdate", (voiceOld, voiceNew) => {
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-client.on("message", message => {
-  if (message.content === "السلام عليكم") {
-    message.channel.send("**:heart:وعليكم السلام ورحمة الله وبركاته:heart:**");
-    message.channel.sendFile("");
-  }
-});
+
 
 client.on("message", message => {
   let args = message.content.split(" ").slice(1);
@@ -2843,6 +2838,13 @@ client.on("message", msg => {
     msg.reply("**😂 وعليكم السلام ورحمة الله وبركاته 💖💕 - منور يا بوت**  ");
   }
 });
+
+client.on("message", msg => {
+  if (msg.content === "هاي") {
+    msg.reply("**😂 هاي 💖💕 - منور يا بوت**");
+  }
+});	
+
 
 client.on("message", msg => {
   if (msg.content === "اهلا") {
