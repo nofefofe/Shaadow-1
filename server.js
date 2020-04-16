@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://333.glitch.me/`);
+  http.get(`http://333.glitch.me/`);///تعديل مهم حط بدل 333 اسم البروجكت
 }, 280000);
 
 // كل البكجات الي ممكن تحتجها في اي بوت
@@ -1265,7 +1265,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "1help") {
     message.channel.send(
-      `**:smiling_imp:  | تم ارسال الاوامر العامة على الخاص **`
+      `**:white_check_mark:  | تم ارسال الاوامر العامة على الخاص **`
     );
 
     message.author.sendMessage(` ✽ **__ Premium Bot v1__**
@@ -1318,7 +1318,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "2help") {
     message.channel.send(
-      `**:smiling_imp:  | تم ارسال الاوامر الإدارية على الخاص **`
+      `**:white_check_mark:  | تم ارسال الاوامر الإدارية على الخاص **`
     );
     
     message.author.sendMessage(` **✽ Premium Bot v1**
@@ -1340,7 +1340,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message.content === prefix + "3help") {
     message.channel.send(
-      `** :smiling_imp: | تم ارسال اوامر الموسيقى في الخاص**`
+      `** :white_check_mark: | تم ارسال اوامر الموسيقى في الخاص**`
     );
 
     message.author.sendMessage(`  **Premium Bot v1**
@@ -1358,7 +1358,7 @@ client.on("message", message => {
     if (message.author.id !== message.guild.owner.user.id) return message.channel.send(`**لا تستطيع استخدام هذا الامر**`);
     
     message.channel.send(
-      `**:smiling_imp:  | تم ارسال اوامر الحماية على الخاص **`
+      `**:white_check_mark:  | تم ارسال اوامر الحماية على الخاص **`
     );
 
     message.author.sendMessage(`**✽  Premium Bot v1**
@@ -1380,7 +1380,7 @@ client.on("message", message => {
   if (message.content === prefix + "5help") {
     
     message.channel.send(
-      `**:smiling_imp:  | تم ارسال الاوامر المميزة على الخاص **`
+      `**:white_check_mark: | تم ارسال الاوامر المميزة على الخاص **`
     );
 
     message.author.sendMessage(` **Premium Bot v1**
