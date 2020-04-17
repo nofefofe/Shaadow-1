@@ -370,7 +370,6 @@ client.on("message", message => {
 https://discordapp.com/api/oauth2/authorize?client_id=685207332929798181&permissions=8&scope=bot`);
   }
 });
-
 client.on("message", message => {
   if (message.content.split(" ")[0] == `=ban`) {
     if (!message.guild || message.author.bot) return undefined;
@@ -391,13 +390,21 @@ client.on("message", message => {
     if (!reason) reason = "No reason provided.";
     if (user.user.id === message.author.id)
       return message.channel.send("You can't ban yourself!");
-    if (
-      message.guild.member(user.user).highestRole.position >=
-      message.guild.member(client.user).highestRole.position
-    )
-      return message.channel.send(
-        `I can't ban **${user.user.tag}** because his role highest than my role!`
-      );
+      if (
+        message.guild.member(user.user).highestRole.position >=
+        message.guild.member(client.user).highestRole.position
+      )
+        return message.channel.send(
+          `I can't ban **${user.user.tag}** because his role highest than my role!`
+        );
+        if (
+            message.guild.member(user.user).highestRole.position >=
+           message.member.highestRole.position
+          )
+            return message.channel.send(
+              `You can't ban **${user.user.tag}** because his role highest than your role.!`
+            );
+              
     if (!message.guild.member(user.user).bannable)
       return message.channel.send(`I can't ban **${user.user.tag}**.`);
     message.guild.member(user).ban(reason, user);
