@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://333.glitch.me/`); ///تعديل مهم حط بدل 333 اسم البروجكت
+  http.get(`http://333.glitch.me/`); ///تعديل مهم حط بدل 333م البروجكت
 }, 280000);
 
 // كل البكجات الي ممكن تحتجها في اي بوت
@@ -414,7 +414,7 @@ client.on("message", message => {
   }
 });
 
-let room = "89458924"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
+let room = "696995540960936006"; //تعديل مهم ايدي روم عد الاعضاء والترحيب ، روم صوتي
 
 client.on("guildMemberAdd", member => {
   let guild = client.channels.get(room).guild.id;
@@ -997,7 +997,7 @@ client.on("guildMemberAdd", member => {
     .addField(" **__Welcome To Server__**", `**${member.guild.name}**`)
     .addField("**انت العضو رقم** ", `${member.guild.memberCount} `)
     .setColor("RANDOM");
-  var channel = member.guild.channels.find("name", "اسم روم الترحيب"); //تعديل مهم اسم روم الولكم
+  var channel = member.guild.channels.find("name", "s"); //تعديل مهم اسم روم الولكم
   if (!channel) return;
   channel.send({ embed: embed });
 });
