@@ -96,7 +96,7 @@ client.on("ready", () => {
   );
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("Shadow Server") ///غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setActivity("Shadow Server | Made By @8awv") ///يوم اللي بدك اياه مثل اسم سيرفرك
   client.user.setStatus("Watching")
 });
 
