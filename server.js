@@ -12,7 +12,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://333.glitch.me/`); ///تعديل مهم حط بدل 333م البروجكت
+  http.get(`https://spangle-kaput-apology.glitch.me/`); ///تعديل مهم حط بدل 333م البروجكت
 }, 280000);
 
 // كل البكجات الي ممكن تحتجها في اي بوت
@@ -65,9 +65,9 @@ console.log("Bot Online 24/7");
 ///
 //الاكواد
 
-const dev = ["حط الايدي"]; ///تعديل مهم حط ايدي حسابك
+const dev = ["552161613726089226"]; ///تعديل مهم حط ايدي حسابك
 const admin = "=";
-var owner = "حط الايدي"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
+var owner = "552161613726089226"; // Owner Bot Mention /// تعديل مهم حط ايدي حسابكتعديل مهم ايدي حسابك
 var number = "1"; // Unmber Bot
 var ex = "2019/10/08";
 client.on("message", message => {
@@ -96,8 +96,8 @@ client.on("ready", () => {
   );
   console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("اسم السيرفر"); ///تعديل مهم غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
-  client.user.setStatus("idle");
+  client.user.setActivity("Shadow Server") ///غير كلمة هيلب وبرميوم اللي بدك اياه مثل اسم سيرفرك
+  client.user.setStatus("Watching")
 });
 
 client.on("message", message => {
@@ -262,7 +262,7 @@ client.on("message", zaid => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@حط الايدي>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <552161613726089226>`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage("")
       .setFooter(zaid.author.username, zaid.author.avatarURL);
     zaid.channel.send(bot);
@@ -997,7 +997,7 @@ client.on("guildMemberAdd", member => {
     .addField(" **__Welcome To Server__**", `**${member.guild.name}**`)
     .addField("**انت العضو رقم** ", `${member.guild.memberCount} `)
     .setColor("RANDOM");
-  var channel = member.guild.channels.find("name", "s"); //تعديل مهم اسم روم الولكم
+  var channel = member.guild.channels.find("welcome", "s"); //تعديل مهم اسم روم الولكم
   if (!channel) return;
   channel.send({ embed: embed });
 });
@@ -2854,7 +2854,7 @@ client.on("message", message => {
 client.on("guildCreate", guild => {
   var embed = new Discord.RichEmbed().setImage("")
     .setDescription(` ✽ **Thank You for Adding  Bot To Your Server**  ✽ 
-   ✽ **Support Server** [ • https://discord.gg/3Qbr6v • ]  ✽ `);
+   ✽ **Support Server** [ • https://discord.gg/jxd8bQ • ]  ✽ `);
   guild.owner.send(embed);
 });
 
