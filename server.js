@@ -963,7 +963,7 @@ client.on("message", message => {
     const embed = new Discord.RichEmbed()
 
       .setImage("")
-      .setTitle(`✽ **Premium Bot**`)
+      .setTitle(`✽ **Shadow Bot**`)
       .setColor("black")
       .setImage(`${x5bzm.avatarURL}`);
     message.channel.sendEmbed(embed);
@@ -1245,7 +1245,7 @@ client.on("message", message => {
       `**:white_check_mark:  | تم ارسال الاوامر العامة على الخاص **`
     );
 
-    message.author.sendMessage(` ✽ **__ Premium Bot v1__**
+    message.author.sendMessage(` ✽ **__ Shadow Bot v1__**
 **__الاوامر العامه__** 
 **  =bot • لعرض معلومات عن البوت** 
 **  =user • لعرض معلومات عنك** 
@@ -1318,7 +1318,7 @@ client.on("message", message => {
       `**:white_check_mark:  | تم ارسال الاوامر الإدارية على الخاص **`
     );
 
-    message.author.sendMessage(` **✽ Premium Bot v1**
+    message.author.sendMessage(` **✽ Shadow Bot v1**
    **__الاوامر الإداريــه__** ✽ 
 **  =clear • لمسح الشات** 
 **  =ban • لتبنيد شخص** 
@@ -1340,10 +1340,10 @@ client.on("message", message => {
       `** :white_check_mark: | تم ارسال اوامر الموسيقى في الخاص**`
     );
 
-    message.author.sendMessage(`  **Premium Bot v1**
+    message.author.sendMessage(`  **Shadow Bot v1**
   **__أوامر الــمــوســيــقــى__**   
-**  حاليا البوت لا يدعم الموسيقى ، لكن يمكنك عمل بوت هنا وضع نفس التوكن وسوف يعمل **
-** -  https://youtu.be/_ddysZxk9Pw | شرح بوت ميوزك يعمل 24 ساعة **
+**  حاليا البوت لا يدعم الموسيقى ،  **
+** -  **
     
 `);
   }
@@ -1359,7 +1359,7 @@ client.on("message", message => {
       `**:white_check_mark:  | تم ارسال اوامر الحماية على الخاص **`
     );
 
-    message.author.sendMessage(`**✽  Premium Bot v1**
+    message.author.sendMessage(`**✽  Shadow Bot v1**
 **__اوامر الــحــمــايــة__**  
 **  =settings limitsban •  تحدد العدد الي تبيه لو حد بند ، البوت يبنده **
 **  =settings limitskick • تحدد العدد الي تبيه لو حد طرد 3 او 4 ، البوت يبنده **
@@ -1380,7 +1380,7 @@ client.on("message", message => {
       `**:white_check_mark: | تم ارسال الاوامر المميزة على الخاص **`
     );
 
-    message.author.sendMessage(` **Premium Bot v1**
+    message.author.sendMessage(` **Shadow Bot v1**
 
 ** =creatcolores • صنع ألوان **
 ** =colors • غير لونك ** 
